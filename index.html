@@ -47,7 +47,6 @@
               <div class="hero-info">
                 <p class="hero-date text">June 6, 2019</p>
                 <p class="hero-author text"><span class="author-by-hero">By </span>Rickie Baroch</p>
-                <p class="hero-comments text">4 comments</p>
               </div>
             </div>
           </div>
@@ -291,29 +290,31 @@
               </a>
             </li>
           </ul>
-          <ul class="navigation-buttons list">
-            <li>
-              <button type="button" class="button arrow-button arrow-button-older">
-                <svg class="button-arrow-icon icon">
-                  <use href="./images/sprite.svg#left"></use>
-                </svg>
-                older post
-              </button>
-            </li>
-            <li><button type="button" class="button">1</button></li>
-            <li><button type="button" class="button">2</button></li>
-            <li><button type="button" class="button">3</button></li>
-            <li><button type="button" class="button">...</button></li>
-            <li><button type="button" class="button">8</button></li>
-            <li>
-              <button type="button" class="button arrow-button">
-                next post
-                <svg class="button-arrow-icon icon">
-                  <use href="./images/sprite.svg#right"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
+          <div class="navigation-buttons-wrapper">
+            <ul class="navigation-buttons list">
+              <li>
+                <button type="button" class="button arrow-button arrow-button-older">
+                  <svg class="button-arrow-icon icon">
+                    <use href="./images/sprite.svg#left"></use>
+                  </svg>
+                  older post
+                </button>
+              </li>
+              <li><button type="button" class="button">1</button></li>
+              <li><button type="button" class="button">2</button></li>
+              <li><button type="button" class="button">3</button></li>
+              <li><button type="button" class="button">...</button></li>
+              <li><button type="button" class="button">8</button></li>
+              <li>
+                <button type="button" class="button arrow-button">
+                  next post
+                  <svg class="button-arrow-icon icon">
+                    <use href="./images/sprite.svg#right"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="general-info">
           <h2 class="visually-hidden">Main information about us</h2>
@@ -415,25 +416,34 @@
               </div>
               <ul class="general-info-categories list">
                 <li class="general-info-category">
-                  <p class="text">Fashion</p>
-                  <p class="text">(23)</p>
+                  <a href="#" class="general-info-category-link link">
+                    <p class="text">Fashion</p>
+                    <p class="text general-info-category-number">(23)</p></a
+                  >
                 </li>
                 <li class="general-info-category">
-                  <p class="text">Style & clothes</p>
-                  (7)
-                  <p class="text"></p>
+                  <a href="#" class="general-info-category-link link">
+                    <p class="text">Style & clothes</p>
+                    <p class="text general-info-category-number">(7)</p></a
+                  >
                 </li>
                 <li class="general-info-category">
-                  <p class="text">Minimalism</p>
-                  <p class="text">(16)</p>
+                  <a href="#" class="general-info-category-link link">
+                    <p class="text">Minimalism</p>
+                    <p class="text general-info-category-number">(16)</p></a
+                  >
                 </li>
                 <li class="general-info-category">
-                  <p class="text">Black & White</p>
-                  <p class="text">(5)</p>
+                  <a href="#" class="general-info-category-link link">
+                    <p class="text">Black & White</p>
+                    <p class="text general-info-category-number">(5)</p></a
+                  >
                 </li>
                 <li class="general-info-category">
-                  <p class="text">Modern clothes</p>
-                  <p class="text">(12)</p>
+                  <a href="#" class="general-info-category-link link">
+                    <p class="text">Modern clothes</p>
+                    <p class="text general-info-category-number">(12)</p></a
+                  >
                 </li>
               </ul>
             </li>
@@ -443,61 +453,96 @@
                   Social media
                 </h3>
               </div>
-
               <ul class="general-info-social-networks list">
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#facebook"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">32k likes</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#pinterest"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link">
+                    <div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#pinterest"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">814 followers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#vimeo"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#vimeo"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">165 followers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#dribbble"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#dribbble"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">6k followers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#twitter"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">130k followers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#behance"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#behance"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">37k followers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#instagram"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">854k followers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#youtube"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#youtube"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">52k subscribers</p>
+                    </div></a
+                  >
                 </li>
                 <li class="general-info-social-network">
-                  <a href="#"
-                    ><svg class="general-info-social-network-icon icon">
-                      <use href="./images/sprite.svg#google"></use></svg
-                  ></a>
+                  <a href="#" class="general-info-social-network-link link"
+                    ><div class="general-info-social-network-wrapper">
+                      <svg class="general-info-social-network-icon icon">
+                        <use href="./images/sprite.svg#google"></use>
+                      </svg>
+                      <p class="general-info-social-network-text text">642 followers</p>
+                    </div></a
+                  >
                 </li>
               </ul>
             </li>
@@ -506,18 +551,42 @@
                 <h3 class="general-info-tags-title heading general-info-title">Tags</h3>
               </div>
               <ul class="general-info-tags list">
-                <li class="general-info-tag">Business</li>
-                <li class="general-info-tag">Freelance</li>
-                <li class="general-info-tag">Money</li>
-                <li class="general-info-tag">Experience</li>
-                <li class="general-info-tag">Lifestyle</li>
-                <li class="general-info-tag">SEO</li>
-                <li class="general-info-tag">Wordpress</li>
-                <li class="general-info-tag">Marketing</li>
-                <li class="general-info-tag">UX</li>
-                <li class="general-info-tag">Modern</li>
-                <li class="general-info-tag">Success</li>
-                <li class="general-info-tag">Nature</li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Business</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Freelance</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Money</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Experience</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Lifestyle</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">SEO</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Wordpress</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Marketing</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">UX</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Modern</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Success</a>
+                </li>
+                <li class="general-info-tag">
+                  <a href="#" class="general-info-tag-link link">Nature</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -578,61 +647,65 @@
       </section>
     </main>
     <footer>
-      <a href="#" class="main-logo link">fashion</a>
-      <ul class="footer-navigation-links-list list">
-        <li class="footer-navigation-links"><a href="#" class="footer-nav-link link">Home</a></li>
-        <li class="footer-navigation-links">
-          <a href="#" class="footer-nav-link link">Recipes</a>
-        </li>
-        <li class="footer-navigation-links">
-          <a href="#" class="footer-nav-link link">Article</a>
-        </li>
-        <li class="footer-navigation-links">
-          <a href="#" class="footer-nav-link link"> Contact</a>
-        </li>
-        <li class="footer-navigation-links">
-          <a href="#" class="footer-nav-link link">Purchase</a>
-        </li>
-      </ul>
-      <ul class="social-network-list list">
-        <li class="social-network">
-          <a href="#" class="social-network-link link"
-            ><svg class="social-network-icon icon">
-              <use href="./images/sprite.svg#facebook"></use></svg
-          ></a>
-        </li>
-        <li class="social-network">
-          <a href="#" class="social-network-link link"
-            ><svg class="social-network-icon icon">
-              <use href="./images/sprite.svg#twitter"></use></svg
-          ></a>
-        </li>
-        <li class="social-network">
-          <a href="#" class="social-network-link link"
-            ><svg class="social-network-icon icon">
-              <use href="./images/sprite.svg#pinterest"></use></svg
-          ></a>
-        </li>
-        <li class="social-network">
-          <a href="#" class="social-network-link link"
-            ><svg class="social-network-icon icon">
-              <use href="./images/sprite.svg#google"></use></svg
-          ></a>
-        </li>
-        <li class="social-network">
-          <a href="#" class="social-network-link link"
-            ><svg class="social-network-icon icon">
-              <use href="./images/sprite.svg#behance"></use></svg
-          ></a>
-        </li>
-        <li class="social-network">
-          <a href="#" class="social-network-link link"
-            ><svg class="social-network-icon icon">
-              <use href="./images/sprite.svg#instagram"></use></svg
-          ></a>
-        </li>
-      </ul>
-      <p class="copyright">@2019 Logwork. All Right Reserved.</p>
+      <div class="container">
+        <div class="main-logo-wrapper">
+          <a href="#" class="main-logo main-logo-footer link">fashion</a>
+        </div>
+        <ul class="footer-navigation-links-list list">
+          <li class="footer-navigation-links"><a href="#" class="footer-nav-link link">Home</a></li>
+          <li class="footer-navigation-links">
+            <a href="#" class="footer-nav-link link">Recipes</a>
+          </li>
+          <li class="footer-navigation-links">
+            <a href="#" class="footer-nav-link link">Article</a>
+          </li>
+          <li class="footer-navigation-links">
+            <a href="#" class="footer-nav-link link"> Contact</a>
+          </li>
+          <li class="footer-navigation-links">
+            <a href="#" class="footer-nav-link link">Purchase</a>
+          </li>
+        </ul>
+        <ul class="social-network-list list">
+          <li class="social-network">
+            <a href="#" class="social-network-link link"
+              ><svg class="social-network-icon icon">
+                <use href="./images/sprite.svg#facebook"></use></svg
+            ></a>
+          </li>
+          <li class="social-network">
+            <a href="#" class="social-network-link link"
+              ><svg class="social-network-icon icon">
+                <use href="./images/sprite.svg#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="social-network">
+            <a href="#" class="social-network-link link"
+              ><svg class="social-network-icon icon">
+                <use href="./images/sprite.svg#pinterest"></use></svg
+            ></a>
+          </li>
+          <li class="social-network">
+            <a href="#" class="social-network-link link"
+              ><svg class="social-network-icon icon">
+                <use href="./images/sprite.svg#google"></use></svg
+            ></a>
+          </li>
+          <li class="social-network">
+            <a href="#" class="social-network-link link"
+              ><svg class="social-network-icon icon">
+                <use href="./images/sprite.svg#behance"></use></svg
+            ></a>
+          </li>
+          <li class="social-network">
+            <a href="#" class="social-network-link link"
+              ><svg class="social-network-icon icon">
+                <use href="./images/sprite.svg#instagram"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <p class="copyright text">@2019 Logwork. All Right Reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
